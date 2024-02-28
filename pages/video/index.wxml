@@ -1,2 +1,4 @@
 <!--pages/video/index.wxml-->
-<text>pages/video/index.wxml</text>
+<text wx:for="{{topMvs}}" wx:key="id">
+  {{item.name}}
+</text>
