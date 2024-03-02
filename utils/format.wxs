@@ -1,0 +1,26 @@
+function formatCount(count) {
+  count = parseInt(count);
+  if (count > 100000000) {
+    return (count / 100000000).toFixed(1) + "亿";
+  } else if (count > 10000) {
+    return (count / 10000).toFixed(1) + "万";
+  } else {
+    return count + "";
+  }
+}
+
+function padStr(duration) {
+  duration = duration + "";
+  return ("00" + duration).slice(duration.length);
+}
+
+function formatDuration(duration) {
+  var mintue = Math.floor(duration / 60);
+  var second = duration % 60;
+  return padStr(mintue) + ":" + padStr(second)
+}
+
+module.exports = {
+  formatCount: formatCount,
+  formatDuration: formatDuration
+}

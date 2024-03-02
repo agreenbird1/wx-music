@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/music/index",
-    "pages/video/index"
+    "pages/video/index",
+    "pages/video-detail/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",

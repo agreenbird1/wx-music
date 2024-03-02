@@ -1,4 +1,8 @@
-<!--pages/video/index.wxml-->
-<text wx:for="{{topMvs}}" wx:key="id">
-  {{item.name}}
-</text>
+<view class="video-wrapper">
+  <view class="item-wrapper" wx:for="{{topMvs}}" wx:key="id">
+    <video-item-v1 bindtap="goToVideoDetails" data-video="{{item}}" item="{{item}}"></video-item-v1>
+  </view>
+  <view wx:if="{{reachBottomLoading}}">
+    <text>Loading……</text>
+  </view>
+</view>

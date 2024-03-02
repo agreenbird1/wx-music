@@ -8,11 +8,9 @@ class Request {
         method,
         data,
         success: (res) => {
-          resolve(res)
+          resolve(res.data)
         },
-        fail: (err) => {
-          reject(err)
-        }
+        fail: reject
       })
     })
   }

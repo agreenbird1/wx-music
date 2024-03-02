@@ -1,1 +1,11 @@
-/* pages/video/index.wxss */
+/* components/video-item-v1/index.wxss */
+.video-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+  padding: 10rpx;
+}
+
+.item-wrapper {
+  width: 49%;
+}
