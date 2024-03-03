@@ -3,11 +3,18 @@
   "projectname": "wx-music",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true
   },
   "condition": {
     "miniprogram": {
       "list": [
+        {
+          "name": "pages/video-detail/index",
+          "pathName": "pages/video-detail/index",
+          "query": "id=14697143",
+          "launchMode": "default",
+          "scene": null
+        },
         {
           "name": "pages/video/index",
           "pathName": "pages/video/index",
@@ -17,5 +24,6 @@
         }
       ]
     }
-  }
+  },
+  "libVersion": "3.1.5"
 }

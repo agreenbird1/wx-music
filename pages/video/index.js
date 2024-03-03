@@ -15,7 +15,7 @@ Page({
       id
     } = event.currentTarget.dataset.video
     wx.navigateTo({
-      url: '/pages/video-detail/index',
+      url: '/pages/video-detail/index?id=' + id,
     })
   },
 

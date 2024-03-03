@@ -1,1 +1,51 @@
-/* pages/video-detail/index.wxss */
+page {
+  padding-top: 225px;
+}
+
+.video {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail {
+  padding: 10px;
+}
+
+.detail .name {
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.detail .player {
+  color: rgb(129, 127, 127);
+}
+
+.detail .play-info {
+  color: rgb(129, 127, 127);
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.relevant-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mv-item {
+  display: flex;
+  gap: 12rpx;
+  margin-bottom: 10px;
+}
+
+.mv-item image {
+  width: 40%;
+  flex-shrink: 0;
+}
