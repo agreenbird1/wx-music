@@ -2,12 +2,13 @@
   "pages": [
     "pages/music/index",
     "pages/video/index",
-    "pages/video-detail/index"
+    "pages/video-detail/index",
+    "pages/search-detail/index"
   ],
   "window": {
     "navigationBarTextStyle": "black",
     "navigationStyle": "default",
-    "navigationBarBackgroundColor": "#ffffff"
+    "navigationBarBackgroundColor": "#f0f0f0"
   },
   "tabBar": {
     "list": [

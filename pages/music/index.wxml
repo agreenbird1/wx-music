@@ -1,4 +1,6 @@
-<!--index.wxml-->
-  <view>
-    {{ message }}
-  </view>
+<van-search bind:click-input="clickSearchInput" background="#f0f0f0" placeholder="搜索" shape="round" disabled />
+<swiper class="swiper" style="height: {{swiperHeight}}px" indicator-dots autoplay circular>
+  <swiper-item class="swiper-item" wx:for="{{banners}}" wx:key="bannerId">
+    <image bindload="swiperImageLoaded" src="{{item.pic}}" mode="widthFix" />
+  </swiper-item>
+</swiper>

@@ -1,2 +1,10 @@
-/**index.wxss**/
+.van-search__content {
+  background-color: #fff;
+}
+.swiper {
+  width: 100%;
+}
 
+.swiper-item image {
+  width: 100%;
+}
