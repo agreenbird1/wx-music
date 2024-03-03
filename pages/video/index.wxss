@@ -4,8 +4,9 @@
   flex-wrap: wrap;
   gap: 16rpx;
   padding: 10rpx;
+  justify-content: space-between;
 }
 
 .item-wrapper {
-  width: 49%;
+  width: 48%;
 }
