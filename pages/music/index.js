@@ -1,5 +1,6 @@
 import {
-  getBanners
+  getBanners,
+  getPlaylist
 } from "../../service/api_music"
 
 let loaded = false;
@@ -8,6 +9,7 @@ Page({
   data: {
     banners: [],
     swiperHeight: 0,
+    recommendSongs: []
   },
   clickSearchInput() {
     wx.navigateTo({
@@ -18,6 +20,11 @@ Page({
     getBanners().then(res => {
       this.setData({
         banners: res.banners
+      })
+    })
+    getPlaylist(1).then(res => {
+      this.setData({
+        recommendSongs: res.playlist.tracks.slice(0, 5)
       })
     })
   },
@@ -40,5 +47,9 @@ Page({
     this.setData({
       swiperHeight: Math.floor(windowInfo.windowWidth / proportion)
     })
+  },
+
+  moreClick() {
+    console.log("moreClick");
   }
 })

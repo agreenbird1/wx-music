@@ -1,0 +1,26 @@
+.area-header {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+}
+
+.right-text {
+  color: #aaa;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.right-slot:empty + .right-text {
+  display: flex;
+}
+
+.right-text image {
+  width: 14px;
+  vertical-align: text-bottom;
+}

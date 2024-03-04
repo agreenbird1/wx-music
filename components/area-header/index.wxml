@@ -1,0 +1,10 @@
+<view class="area-header">
+  <view class="title">{{title}}</view>
+  <view class="right-slot">
+    <slot></slot>
+  </view>
+  <view class="right-text" bind:tap="rightTextClick">
+    {{rightText}}
+    <image src="../../assets/images/icons/arrow-right.png" mode="widthFix" />
+  </view>
+</view>
